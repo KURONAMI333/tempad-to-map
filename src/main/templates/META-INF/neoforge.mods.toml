@@ -1,0 +1,47 @@
+# Tempad to Map - neoforge.mods.toml
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+issueTrackerURL="https://github.com/KURONAMI333/tempad-to-map/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+logoFile="logo.png"
+displayURL="https://github.com/KURONAMI333/tempad-to-map"
+description='''
+${mod_description}
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# Tempad: 機能の供給源（overworld attachment player_points の読み取り）。
+# サーバー側でも attachment を読むため side 制約は掛けない（両 dist で required）。
+[[dependencies.${mod_id}]]
+    modId="tempad"
+    type="required"
+    versionRange="[${tempad_version},)"
+    ordering="AFTER"
+
+# JourneyMap: 任意。不在では静かに何もしない（Inner class isolation）。
+# JM 自体がクライアント専用 MOD なので宣言も CLIENT に限定。
+[[dependencies.${mod_id}]]
+    modId="journeymap"
+    type="optional"
+    versionRange="[1,)"
+    ordering="AFTER"
+    side="CLIENT"
