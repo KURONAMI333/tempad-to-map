@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+description='''${mod_description}'''
+authors="${mod_authors}"
+logoFile="logo.png"
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# サーバーで Tempad 2.x の保存地点を読むため required・両 dist（075 ハンドオフのマニフェスト判断と同一）
+[[dependencies.${mod_id}]]
+    modId="tempad"
+    mandatory=true
+    versionRange="[2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# JM 自体がクライアント専用 MOD。コード側は ModList チェックで二重防御
+[[dependencies.${mod_id}]]
+    modId="journeymap"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="CLIENT"
