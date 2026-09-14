@@ -20,3 +20,11 @@ still received but no waypoints are created.
 All Rights Reserved. You may include this mod in any modpack, including a
 monetised one, without permission or credit. See [LICENSE](LICENSE) for the
 full terms.
+
+## Downloads and support
+
+Downloads: [GitHub Releases](https://github.com/KURONAMI333/tempad-to-map/releases/tag/v0.1.0).
+
+For bugs and questions, DM [@kuronami333 on X](https://x.com/kuronami333).
+
+[Source](https://github.com/KURONAMI333/tempad-to-map) · [License](LICENSE)
