@@ -1,0 +1,1 @@
+Turn saved Tempad locations into JourneyMap waypoints that update when the locations change.
