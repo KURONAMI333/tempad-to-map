@@ -1,6 +1,7 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
+issueTrackerURL="https://x.com/kuronami333"
 
 [[mods]]
 modId="${mod_id}"
@@ -9,6 +10,7 @@ displayName="${mod_name}"
 description='''${mod_description}'''
 authors="${mod_authors}"
 logoFile="logo.png"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/tempad-to-map"
 
 [[dependencies.${mod_id}]]
     modId="forge"
